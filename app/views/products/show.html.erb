@@ -1,0 +1,8 @@
+<p><%= @product.name %></p>
+
+<p><%= @product.price %></p>
+<p><%= @product.quality %></p>
+<ul>
+  <li><%= link_to "Edit", edit_product_path(@product) %></li>
+  <li><%= link_to "Delete", product_path(@product), method: :delete %></li>
+</ul>
